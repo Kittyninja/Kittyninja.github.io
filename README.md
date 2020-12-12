@@ -1,10 +1,7 @@
 # Kittyninja.github.io
-# Kittyninja.github.io
-Project Website
+Welcome to Kittyninja's GitHub page!
 
-um this is just the beginnings of my github page...
+I regularly post JS and HTML/CSS updates with tools for learning and just projects that I am working on.
 
-I hope to put .js and .css files for storage and easy access with data for other projects.
-I am still learning dom access with js loops and simulation/calculation.
-
-Kittyninja.github.io is just html pages, I will put js on later.
+# Current Projects
+Right now I am working on JS tools for other devs and also a soccer table calculator (I call it football) and if you wish to use any of these tools and gadgets feel free to download the zip, or just browse and copy and paste.
