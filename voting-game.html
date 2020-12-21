@@ -1,0 +1,313 @@
+
+
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Voting Game</title>
+<link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id = "mack">VOTING GAME</h1>
+
+
+    <input type="text" placeholder="Enter Your Name Here">
+    <p>Welcome <span></span></p>
+    <script>
+    var text = document.querySelector('span')
+    var inp = document.querySelector('input')
+    setInterval(() => {
+    text.textContent = inp.value
+    }, 100);
+    </script>
+
+
+
+
+
+
+  <h1 id = "test"> Democrat Electoral Votes: </h1>
+    <h1 id = "bo"> Republican Electoral Votes: </h1>
+
+
+    <br><br>
+    <h2 id = "id02">California (55 Electoral Votes)</h2>
+      <button onclick = "caliD()" id = "caliBlue">California Goes Democrat</button>
+<button id = "caliRed" onclick = "caliR()">California Goes Republican</button>
+<br><br>
+<h2 id = "id01">Texas (38 Electoral Votes)</h2>
+
+<button onclick = "texasD()" id = "texasBlue">Texas Goes Democrat</button>
+<button id = "texasRed" onclick = "texasR()">Texas Goes Republican</button>
+
+
+    <br><br>
+    <h2 id = "id03">Florida (29 Electoral Votes)</h2>
+
+    <button onclick = "flD()" id = "floBlue">Florida Goes Democrat</button>
+    <button id = "floRed" onclick = "flR()">Florida Goes Republican</button>
+    <br><br>
+
+    <h2 id = "id04">New York (29 Electoral Votes) </h2>
+
+    <button onclick = "nyD()" id = "nyBlue">New York Goes Democrat</button>
+    <button id = "nyRed" onclick = "nyR()">New York Goes Republican</button>
+        <br><br>
+    <h2 id = "id05">Illinois (20 Electoral Votes)</h2>
+
+    <button onclick = "ilD()" id = "ilBlue">Illionis Goes Democrat</button>
+    <button id = "ilRed" onclick = "ilR()">Illinois Goes Republican</button>
+    <br><br>
+    <h2 id = "id06">Pennsylvania (20 Electoral Votes)</h2>
+
+    <button onclick = "peD()" id = "peBlue">Pennsylvania Goes Democrat</button>
+    <button id = "peRed" onclick = "peR()">Pennsylvania Goes Republican</button>
+
+    <br><br>
+    <h2 id = "id07">Ohio (18 Electoral Votes)</h2>
+
+    <button onclick = "oD()" id = "oBlue">Ohio Goes Democrat</button>
+    <button id = "oRed" onclick = "oR()">Ohio Goes Republican</button>
+    <br><br>
+    <h2 id = "id08">Georgia (16 Electoral Votes)</h2>
+
+    <button onclick = "geD()" id = "geBlue">Georgia Goes Democrat</button>
+    <button id = "geRed" onclick = "geR()">Georgia Goes Republican</button>
+
+
+  </body>
+  <script>
+    var demoVotes = 0;
+    var repoVotes = 0;
+    var name = document.getELementById("name").value();
+
+
+
+
+    function texasD() {
+
+      demoVotes += 38;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id01").innerHTML = "Texas is Blue ";
+    document.getElementById("id01").style.color = "blue";
+    document.getElementById("texasBlue").innerHTML = "";
+      document.getElementById("texasRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function texasR() {
+
+      repoVotes += 38;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id01").innerHTML = "Texas is Red ";
+    document.getElementById("id01").style.color = "red";
+
+    document.getElementById("texasBlue").innerHTML = "";
+      document.getElementById("texasRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function caliD() {
+
+      demoVotes += 55;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id02").innerHTML = "California is Blue ";document.getElementById("id02").style.color = "blue";
+
+    document.getElementById("caliBlue").innerHTML = "";
+      document.getElementById("caliRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function caliR() {
+
+      repoVotes += 55;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id02").innerHTML = "California is Red ";
+      document.getElementById("id02").style.color = "red";
+
+    document.getElementById("caliBlue").innerHTML = "";
+      document.getElementById("caliRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function flD() {
+
+      demoVotes += 29;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id03").innerHTML = "California is Blue ";
+    document.getElementById("id03").style.color = "blue";
+
+    document.getElementById("floBlue").innerHTML = "";
+      document.getElementById("floRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function flR() {
+
+      repoVotes += 29;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id03").innerHTML = "California is Red ";
+    document.getElementById("id03").style.color = "red";
+
+    document.getElementById("floBlue").innerHTML = "";
+      document.getElementById("floRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function nyD() {
+
+      demoVotes += 29;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id04").innerHTML = "New York is Blue ";
+    document.getElementById("id04").style.color = "blue";
+
+    document.getElementById("nyBlue").innerHTML = "";
+      document.getElementById("nyRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function nyR() {
+
+      repoVotes += 29;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id04").innerHTML = "New York is Red ";
+    document.getElementById("id04").style.color = "red";
+
+    document.getElementById("nyBlue").innerHTML = "";
+      document.getElementById("nyRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function ilD() {
+
+      demoVotes += 20;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id05").innerHTML = "Illionis is Blue ";
+    document.getElementById("id05").style.color = "blue";
+
+    document.getElementById("ilBlue").innerHTML = "";
+      document.getElementById("ilRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function ilR() {
+
+      repoVotes += 20;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id05").innerHTML = "California is Red ";
+    document.getElementById("id05").style.color = "red";
+
+    document.getElementById("ilBlue").innerHTML = "";
+      document.getElementById("ilRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function peD() {
+
+      demoVotes += 20;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id06").innerHTML = "Pennsylvania is Blue ";
+    document.getElementById("id06").style.color = "blue";
+
+    document.getElementById("peBlue").innerHTML = "";
+      document.getElementById("peRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function peR() {
+
+      repoVotes += 20;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id06").innerHTML = "Pennsylvania is Red ";
+    document.getElementById("id01").style.color = "red";
+
+    document.getElementById("peBlue").innerHTML = "";
+      document.getElementById("peRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function oD() {
+
+      demoVotes += 18;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id07").innerHTML = "Ohio is Blue ";
+    document.getElementById("id07").style.color = "blue";
+
+    document.getElementById("oBlue").innerHTML = "";
+      document.getElementById("oRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function oR() {
+
+      repoVotes += 18;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id07").innerHTML = "Ohio is Red ";
+    document.getElementById("id07").style.color = "red";
+
+    document.getElementById("oBlue").innerHTML = "";
+      document.getElementById("oRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function geD() {
+
+      demoVotes += 16;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id08").innerHTML = "Georgia is Blue ";
+    document.getElementById("id08").style.color = "blue";
+
+    document.getElementById("geBlue").innerHTML = "";
+      document.getElementById("geRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+    function geR() {
+
+      repoVotes += 16;
+
+    document.getElementById("test").innerHTML = "Democrat Electoral Votes: " + demoVotes;
+    document.getElementById("bo").innerHTML = "Republican Electoral Votes: " + repoVotes;
+    document.getElementById("id08").innerHTML = "Georgia is Red ";
+    document.getElementById("id08").style.color = "red";
+
+    document.getElementById("geBlue").innerHTML = "";
+      document.getElementById("geRed").innerHTML = "";
+      console.log(demoVotes);
+
+    }
+  </script>
+</html>
