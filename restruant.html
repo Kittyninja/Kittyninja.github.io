@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        font-family: "Caveat";
+      }
+      #koog {
+        text-align: center;
+        background-color: white;
+        opacity: 0.8;
+        border-radius: 160px;
+      }
+      .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  margin-left: 35%;
+  margin-right: 50%;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+#chile {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+#restraunt-heading {
+  position: absolute;
+  text-align: center;
+  margin-right: 40%;
+  margin-left: 45%;
+}
+#raving {
+  margin-left: 60px;
+}
+li {
+  font-size: 20px;
+}
+#pa {
+  font-size: 20px;
+  height: 40px;
+  width: 190px;
+  margin-left: 50px;
+  border-radius: 80px;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <img id = "chile" src = "https://www.foodandwine.com/sites/default/files/original-201310-r-three-chile-beef-chili.jpg">
+<div id = "koog">
+  <h1 id = "restraunt-heading">Bob's Freaking Chile</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="dropdown">
+      <br>
+  <button class="dropbtn">Our Menus!</button>
+  <div class="dropdown-content">
+    <a href="#bre">Breakfast</a>
+    <a href="#lun">Lunch</a>
+    <a href="#des">Dessert</a>
+  </div>
+</div>
+<br>
+<h2 id = "raving">Raving Reviews:</h2>
+<li> This food is just magic. - Gordon Ramsey
+<li> Their food is full of soul and just amazing, gooey, chile! - Mark Doson
+<br>
+<br>
+<h2 id = "raving">How to buy:</h2>
+<button id = "pa">Submit Your Order</button>
+<br>
+<br><br>
+<br><br>
+<br><br>
+
+<h2 id = "raving bre">Breakfast</h2>
+<li><input type = "checkbox">Fried Goose --- $2.99
+    <div id = "bre"></div>
+  <br>
+  <br>
+
+  <h2 id = "raving bre">Lunch</h2>
+  <li><input type = "checkbox">Fried Goose --- $2.99
+
+    <br>
+    <br>
+
+    <h2 id = "raving bre">Dinner</h2>
+
+    <li><input type = "checkbox">Fried Goose --- $2.99
+
+      <br>
+      <br>
+<h2>Money Spent: <span id = "gook"></span></h2>
+
+</div>
+  </body>
+  <script>
+    setInterval(function() {
+    // define money spent every 1/10 second
+    },100)
+  </script>
+</html>
